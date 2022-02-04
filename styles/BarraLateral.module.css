@@ -1,0 +1,14 @@
+.container {
+  /* background-color: cyan; */
+  padding: 0 0 0 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  list-style: none;
+  padding: 0 0 0 0;
+}

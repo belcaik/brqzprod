@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/image"
+import BarraLateral from "../components/BarraLateral";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -11,7 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <BarraLateral className={styles.barra}/>
+        <Image src={"/../public/brqz.svg"} width={200} height={200} className={styles.peo}></Image>
+      </main>
 
       <footer className={styles.footer}>
         <a
