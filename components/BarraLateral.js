@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function BarraLateral() {
   return (
     <div className={styles.container}>
-      <a href="home">
+      <a href="/">
         <Image
           src={"/../public/brqz.svg"}
           width={70}
