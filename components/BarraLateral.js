@@ -1,18 +1,19 @@
 import Image from "next/image";
 import styles from "../styles/BarraLateral.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function BarraLateral() {
   return (
     <div className={styles.container}>
-      <a href="/">
+      <Link href="/">
         <Image
           src={"/../public/brqz.svg"}
           width={70}
           height={70}
           alt="brqz logo"
         ></Image>
-      </a>
+      </Link>
       <ul className={styles.social}>
         <motion.li
           whileHover={{
@@ -22,13 +23,13 @@ export default function BarraLateral() {
             },
           }}
         >
-          <a href="contact">
+          <Link href="contact">
             <Image
               src={"/../public/icons/contact.svg"}
               width={30}
               height={30}
             ></Image>
-          </a>
+          </Link>
         </motion.li>
         <motion.li
           whileHover={{
@@ -38,13 +39,13 @@ export default function BarraLateral() {
             },
           }}
         >
-          <a href="about">
+          <Link href="about">
             <Image
               src={"/../public/icons/about.svg"}
               width={30}
               height={30}
             ></Image>
-          </a>
+          </Link>
         </motion.li>
         <motion.li
           whileHover={{
