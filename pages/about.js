@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
+import styles from "../styles/About.module.css";
+import Head from "next/head";
 import BarraLateral from "../components/BarraLateral";
-import Head from "next/Head";
-import styles from "../styles/Contact.module.css";
-
-export default function Contact(){
-	return(
-		<div>
-			<Head>
+export default function About() {
+  return (
+    <div className={styles.container}>
+      <Head>
         <title>Brqz Prod</title>
         <meta name="description" content="produccion audiovisual" />
         <link rel="icon" href="/favicon.ico" />
@@ -33,7 +32,7 @@ export default function Contact(){
               },
             }}
           >
-            <h1>Contacto</h1>
+            <h1>Sobre mi</h1>
           </motion.div>
           <motion.div
             initial="hidden"
@@ -53,30 +52,16 @@ export default function Contact(){
               },
             }}
           >
-            <p>Escribe tu idea, duda o carta de amor aqui abajo y te responderé a la brevedad</p>
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: {
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.6,
-                  type: "just",
-                },
-              },
-            }}
-          >
-            <form>
-			  <input>
-			  </input>
-		  </form>
+            <p>
+              Duis adipisicing cillum consectetur mollit laborum ullamco nulla
+              laborum tempor aute exercitation. Tempor consectetur amet officia
+              quis nisi eu sunt mollit. Eiusmod et incididunt minim
+              reprehenderit. Reprehenderit dolor et aliqua irure dolore proident
+              consequat. Enim proident irure quis ipsum reprehenderit voluptate
+              exercitation dolore in ex Lorem adipisicing. Nisi minim ut sit
+              nisi minim adipisicing commodo proident aute consectetur laboris
+              officia. Mollit sit anim voluptate pariatur est ut tempor.
+            </p>
           </motion.div>
         </div>
       </main>
@@ -90,6 +75,6 @@ export default function Contact(){
           <p>Created by belcaik. © 2022</p>
         </a>
       </footer>
-		</div>
-	)
+    </div>
+  );
 }
