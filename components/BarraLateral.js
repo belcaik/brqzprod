@@ -17,7 +17,7 @@ export default function BarraLateral() {
       >
         <Link href="/">
           <Image
-            src={"/brqz.png"}
+            src={"/brqz.svg"}
             width={70}
             height={70}
             alt="brqz logo"
