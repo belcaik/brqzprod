@@ -16,20 +16,12 @@ export default function About() {
         <div className={styles.texto}>
           <motion.div
             initial="hidden"
-            animate="visible"
+            animate="enter"
+            exit="exit"
             variants={{
-              hidden: {
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.4,
-                  type: "tween",
-                },
-              },
+              hidden: { opacity: 0, x: 0, y: 200},
+              enter: { opacity: 1, x: 0, y: 0, duration: 200},
+              exit: { opacity: 0, x: 0, y: -200, duration: 200 },
             }}
           >
             <h1>Sobre mi</h1>

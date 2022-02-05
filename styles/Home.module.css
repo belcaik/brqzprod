@@ -2,12 +2,12 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 8fr;
-}
-.videos {
-  grid-column: 2;
+  /* grid-template-rows: 1fr 1fr 1fr; */
 }
 
+
 .barra {
+  position: static;
   grid-column: 1;
   margin-left: 0px;
 }

@@ -2,7 +2,9 @@ import Head from "next/head";
 import Videos from "../components/Videos";
 import BarraLateral from "../components/BarraLateral";
 import styles from "../styles/Home.module.css";
-
+import { motion } from "framer-motion";
+import Contact from "./contact";
+import About from "./about";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -13,8 +15,19 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <BarraLateral className={styles.barra}/>
-        <Videos className={styles.videos}></Videos>
+        <BarraLateral className={styles.barra} />
+        <motion.div
+          initial="hidden"
+          animate="enter"
+          exit="exit"
+          variants={{
+            hidden: { opacity: 0, x: 0, y: -200, duration: 2},
+            enter: { opacity: 1, x: 0, y: 0, duration: 2},
+            exit: { opacity: 0, x: 0, y: -100, duration: 2 },
+          }}
+        >
+          <Videos className={styles.videos}></Videos>
+        </motion.div>
       </main>
 
       <footer className={styles.footer}>
