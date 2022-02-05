@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import BarraLateral from "../components/BarraLateral";
-import Head from "next/Head";
+import Head from "next/head";
 import styles from "../styles/Contact.module.css";
 
 export default function Contact(){
