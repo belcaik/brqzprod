@@ -18,7 +18,35 @@
 	grid-column: 1;
 	padding-left: 0.5em;
    }
-   
+   .form {
+	   display: grid;
+	   justify-content: center;
+   }
+   .form label {
+	   text-align: left;
+	   padding: 0.3rem;
+   }
+   .form input{
+	   padding: 0.3rem;
+	   border: none;
+	   border-bottom: 2px solid #666;
+	   border-radius: 5px;
+	   
+	}
+   .form input[type=submit]{
+	   padding: 0.3rem;
+	   border: none;
+	   border-radius: 5px;
+	   
+	}
+	.form textarea{
+		padding: 0.3rem;
+		resize: none;
+		border: none;
+		border-bottom: 2px solid #666;
+		margin-bottom: 0.6rem;
+		border-radius: 5px;
+   }
    .footer {
 	display: flex;
 	flex: 1;

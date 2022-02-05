@@ -11,4 +11,13 @@
 .social {
   list-style: none;
   padding: 0 0 0 0;
+  
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.social li{
+  cursor: pointer;
 }
