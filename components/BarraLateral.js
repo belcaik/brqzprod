@@ -17,7 +17,7 @@ export default function BarraLateral() {
       >
         <Link href="/">
           <Image
-            src={"/../public/brqz.png"}
+            src={"/brqz.png"}
             width={70}
             height={70}
             alt="brqz logo"
@@ -36,7 +36,7 @@ export default function BarraLateral() {
         >
           <Link href="about">
             <Image
-              src={"/../public/icons/about.svg"}
+              src={"/icons/about.svg"}
               width={30}
               height={30}
             ></Image>
@@ -53,7 +53,7 @@ export default function BarraLateral() {
         >
           <Link href="contact">
             <Image
-              src={"/../public/icons/contact.svg"}
+              src={"/icons/contact.svg"}
               width={30}
               height={30}
             ></Image>
@@ -70,7 +70,7 @@ export default function BarraLateral() {
         >
           <a href="https://www.instagram.com/brqz.prod/">
             <Image
-              src={"/../public/icons/instagram.svg"}
+              src={"/icons/instagram.svg"}
               width={30}
               height={30}
             ></Image>
@@ -86,7 +86,7 @@ export default function BarraLateral() {
         >
           <a href="https://www.youtube.com/channel/UCQ46EAc0xDb-gioUD_q6Y7w">
             <Image
-              src={"/../public/icons/youtube.svg"}
+              src={"/icons/youtube.svg"}
               width={30}
               height={30}
             ></Image>
