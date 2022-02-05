@@ -1,0 +1,23 @@
+/* .carrusel {
+  height: inherit;
+  width: inherit; 
+}*/
+
+.videoContainer {
+  padding: 0 0 0 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.videoContainer h1{
+	position: absolute;
+	top: 30%;
+	color: #eaeaea;
+	text-shadow: 2px 2px #000;
+}
+.video {
+  height: auto;
+  width: 100%;
+}

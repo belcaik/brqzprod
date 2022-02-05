@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image"
+import Videos from "../components/Videos";
 import BarraLateral from "../components/BarraLateral";
 import styles from "../styles/Home.module.css";
 
@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <BarraLateral className={styles.barra}/>
-        <Image src={"/../public/brqz.svg"} width={200} height={200} className={styles.peo}></Image>
+        <Videos className={styles.videos}></Videos>
       </main>
 
       <footer className={styles.footer}>

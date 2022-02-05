@@ -1,21 +1,21 @@
-
-
 .main {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 8fr;
 }
+.videos {
+  grid-column: 2;
+}
 
-.barra{
+.barra {
   grid-column: 1;
   margin-left: 0px;
 }
-.peo{grid-column: 2;}
 
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
@@ -27,19 +27,6 @@
   align-items: center;
   flex-grow: 1;
 }
-
-
-
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-
 
 @media (max-width: 600px) {
   .grid {
