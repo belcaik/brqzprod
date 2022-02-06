@@ -1,30 +1,31 @@
 require('dotenv').config();
 const PASSWORD = process.env.password;
+const nodemailer = require('nodemailer');
 
 export default function handler(req, res) {
-  let nodemailer = require('nodemailer');
-  const transporter = nodemailer.createTransport({
-    port: 465,
-    host: "smtp.gmail.com",
+  var transporter = nodemailer.createTransport({
+    host: "smtp.ethereal.email",
+    port: 587,
+    secure: false,
     auth: {
-      user:'velcaik',
+      user:'louisa.wolf34@ethereal.email',
       pass: PASSWORD,
-    },
-    secure: true,
+    }
   });
-  const mailData={
-    from: 'velcaik@gmail.com',
+  var mailData={
+    from: 'louisa.wolf34@ethereal.email',
     to: 'belcaik@gmail.com',
-    subject: `Mensaje de ${req.body.nombre}`,
-    text: req.body.mensaje,
-    html: <div>{req.body.message}</div>
+    subject: `Mensaje de `,
+    text: 'sdfasd',
+   // html: <div>{req.body.message}</div>
   }
   transporter.sendMail(mailData, (err, info)=>{
     if(err){
       console.log(err)
+      res.status(500)
     }else{
       console.log(info)
+      res.status(200)
     }
   })
-  res.status(200)
 }
