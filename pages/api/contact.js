@@ -21,7 +21,7 @@ export default function handler(req, res) {
   });
   var mailData = {
     from: "contacto@pedrogarrido.tech",
-    to: "belcaik@gmail.com",
+    to: "s1dh4.test@inbox.testmail.app",
     subject: `${req.body.nombre} Te envio un mensaje!`,
     html: `
       <h2>Mensaje:</h2>
@@ -43,7 +43,7 @@ export default function handler(req, res) {
       res.status(500);
       console.log(err);
     } else {
-      res.status(200).then(console.log(info));
+      res.status(200)
     }
   });
 }

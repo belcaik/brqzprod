@@ -3,12 +3,15 @@ import BarraLateral from "../components/BarraLateral";
 import Head from "next/head";
 import styles from "../styles/Contact.module.css";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Contact() {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
   const [submited, setSubmited] = useState(false);
+
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -138,6 +141,7 @@ export default function Contact() {
                 type="submit"
                 onClick={(e) => {
                   handleSubmit(e);
+                  router.push("/thanks");
                 }}
                 value="Enviar"
               ></input>
